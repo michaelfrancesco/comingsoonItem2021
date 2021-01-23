@@ -39,13 +39,13 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel"></h5>
+              <h5 class="modal-title" id="myModalLabel">A Movie Quote</h5>
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-              
+              <span id = "myTxt"></span>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -62,6 +62,19 @@
     <script>
         $(window).on("load",function(){
             $('.loading-wrapper').fadeOut("slow");
+        });
+
+        $(document).ready(function(){
+          var text = ["'Do or do not, there is no try.' -Yoda, from Star Wars"];
+          text[1] = "Anger can make things that are right, feels unbearable";
+          text[2] = "Life moves pretty fast. If you don’t stop and look around once in a while, you could miss it. – Ferris, from Ferris Bueller’s Day Off";
+          text[3] = "'Kenangan itu cuma hantu di sudut fikir, selama kita cuma diam, selamanya dia tetap jadi hantu. Ga akan pernah jadi kenyataan' - Perahu kertas";
+          text[4] = "'Tak seusia, bukan berarti tak sesuai. ' -Cinta Selamanya";
+          text[5] = "'We are who we choose to be.' – Green Goblin, from Spider-Man";
+          text[6] = "'Tuhan tidak pernah menciptakan produk gagal. ' - Comic 8";
+
+          var x = Math.floor((Math.random()*text.length));
+          $('#myTxt').html(text[x]);
         });
 
         // $("#saveme").click(function(){
