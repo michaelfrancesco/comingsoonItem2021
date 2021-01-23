@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>ITEM 2021 - Ini Talkshow Edukasi Movie</title>
-    <link rel="icon" href="asset/item1.png">
+    <link rel="icon" id="logo" href="asset/itemlogokepala.png">
 </head>
 <body>
     <div class="loading-wrapper">
@@ -39,16 +39,18 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel">A Movie Quote</h5>
+              <span id = "myPic"></span>
+              <!-- <h5 class="modal-title" id="myModalLabel">A Movie Quote</h5>
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
-                </button>
+                </button> -->
             </div>
             <div class="modal-body">
+              
               <span id = "myTxt"></span>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
@@ -72,11 +74,26 @@
           text[4] = "'Tak seusia, bukan berarti tak sesuai. ' -Cinta Selamanya";
           text[5] = "'We are who we choose to be.' – Green Goblin, from Spider-Man";
           text[6] = "'Tuhan tidak pernah menciptakan produk gagal. ' - Comic 8";
+          text[7] = "'Dimana ada teman disitu ada makanan gratis. ' - Ivan";
+
+          // var pic = [''];
+          // pic[1] = "" ;
+          // pic[2] = "" ;
+          // pic[3] = "" ;
+          // pic[4] = "" ;
+          // pic[5] = "" ;
+          // pic[6] = "" ;
+          // pic[7] = "" ;
+
+          
+
 
           var x = Math.floor((Math.random()*text.length));
           $('#myTxt').html(text[x]);
+          $('#myPic').html(pic[x]);
         });
 
+       
         // $("#saveme").click(function(){
         //     $("#panel").slideToggle("slow");
         // });
