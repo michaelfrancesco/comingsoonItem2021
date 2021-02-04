@@ -146,6 +146,12 @@ label{
         bottom: 25px;
         right: 30px;
     }
+
+    /* #karakter3 {
+        height: 100px;
+        bottom: 35px;
+        right: 40px;
+    } */
 }
 @media only screen and (max-width: 430px) {
     #karakter1{
@@ -159,4 +165,10 @@ label{
         bottom: 30px;
         right: 70px;
     }
+
+    /* #karakter3 {
+        height: 100px;
+        bottom: 35px;
+        right: 40px;
+    } */
 }
