@@ -39,12 +39,18 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
+<<<<<<< HEAD
               <h5 class="modal-title" id="myModalLabel">Movie Quote</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+=======
+              <h5 class="modal-title" id="myModalLabel"></h5>
+                <!-- <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+>>>>>>> e57b683ffd05f0a087158d7bf87c9b5306f62e01
                   <span aria-hidden="true">&times;</span>
-                </button>
+                </button> -->
             </div>
             <div class="modal-body">
+            
             <?php
                 include "api/connect.php";
 
@@ -53,6 +59,7 @@
                 $stmt->execute();
         
                 if ($stmt ){
+<<<<<<< HEAD
                     while($row = $stmt->fetch()){ ?>
                         <div class="quote">
                             <?php echo $row ["quote"];?>
@@ -62,19 +69,27 @@
                         </div>
                         <img src = "<?php echo $row["pic_dir"];?>" width="430" class="center">
                             <?php
+=======
+                    while($row = $stmt->fetch()){
+                        echo $row ["quote"];
+                        echo $row ["pic_dir"];
+>>>>>>> e57b683ffd05f0a087158d7bf87c9b5306f62e01
                     }
                 }
               ?>
+
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
 
-    <!-- jquery scroll" jangan hapus oi -->
-    <!-- <div id="panel">TEST</div> -->
+      <img src="asset/char/Karakter ITEM 1.png" id="karakter1">
+      <img src="asset/char/Karakter ITEM 2.png" id="karakter2">
+
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -83,9 +98,7 @@
             $('.loading-wrapper').fadeOut("slow");
         });
 
-        // $("#saveme").click(function(){
-        //     $("#panel").slideToggle("slow");
-        // });
+        
 
     </script>
 </body>
