@@ -39,15 +39,10 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
-<<<<<<< HEAD
               <h5 class="modal-title" id="myModalLabel">Movie Quote</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
-=======
-              <h5 class="modal-title" id="myModalLabel"></h5>
-                <!-- <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
->>>>>>> e57b683ffd05f0a087158d7bf87c9b5306f62e01
                   <span aria-hidden="true">&times;</span>
-                </button> -->
+                </button>
             </div>
             <div class="modal-body">
             
@@ -59,7 +54,6 @@
                 $stmt->execute();
         
                 if ($stmt ){
-<<<<<<< HEAD
                     while($row = $stmt->fetch()){ ?>
                         <div class="quote">
                             <?php echo $row ["quote"];?>
@@ -69,11 +63,6 @@
                         </div>
                         <img src = "<?php echo $row["pic_dir"];?>" width="430" class="center">
                             <?php
-=======
-                    while($row = $stmt->fetch()){
-                        echo $row ["quote"];
-                        echo $row ["pic_dir"];
->>>>>>> e57b683ffd05f0a087158d7bf87c9b5306f62e01
                     }
                 }
               ?>
