@@ -66,6 +66,28 @@ body{
 .title{
     font-family: 'roboto mono', sans-serif;
 }
+.center{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    font-family: Goldman Sans;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.movie {
+    font-family: Goldman Sans;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
 
 label{
     font-weight: bold;
@@ -88,7 +110,7 @@ label{
 }
 
 .btn:hover {
-    background-color: white;
+    background-color: #75cbbc;
     color: black;
 }
 
@@ -102,7 +124,7 @@ label{
 }
 
 .modal-header {
-    background-color: #e4a0f7;
+    background-color: #B47EDE;
     color: white;
 }
 
