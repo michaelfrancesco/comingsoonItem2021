@@ -20,6 +20,6 @@ try {
     //throw new \PDOExeption($e->getMessage(), (int)$e->getCode());
     echo "Error Connect to Database Msg: ".$e->getMessage();
 }
-
+session_start();
 
 ?>
