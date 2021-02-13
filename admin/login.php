@@ -8,6 +8,10 @@ if ($_GET['stat']== 1) {
     echo "<script> alert ('Wrong Password and NRP'); </script> ";
     }
 }
+if( isset($_SESSION["check"])){
+    header("location: index.php");
+    exit;
+}
 
 ?>
 
@@ -59,6 +63,7 @@ if ($_GET['stat']== 1) {
         </div>
     </div>
     
+    
 
       <img src="asset/char/Karakter ITEM 1.png" id="karakter1">
       <img src="asset/char/Karakter ITEM 2.png" id="karakter2">
@@ -74,5 +79,7 @@ if ($_GET['stat']== 1) {
             $('.loading-wrapper').fadeOut("slow");
         });
     </script>
+
+    
 </body>
 </html>
