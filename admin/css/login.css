@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Roboto+Mono:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
 html,
 body {
   height: 100%;

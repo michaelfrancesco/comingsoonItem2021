@@ -38,24 +38,27 @@ if ($_GET['stat']== 1) {
                 <img src="asset/item1.png" width="200" class="mb-2" lt="">
                 <h1 class="title-h1" >Coming Soon</h1>
                 <div class="mb-4"></div>
+                <div class="card p-4 text-left">
+        <body class="text-center" data-new-gr-c-s-check-loaded="14.986.0" data-gr-ext-installed="">
+            <h1 class="title-h1">Login</h1>
+            <main class="form-signin">
+                <form action="api/ceklogin.php" method="POST">
+                    <h1 class="h3 mb-3 fw-normal">Login Portal</h1>
+                    <label for="nrp" class="visually-hidden">Nrp</label>
+                    <input type="nrp" name="nrp" id="nrp" class="form-control" placeholder="Ex: c141901xxx" required="">
+                    <label for="password" class="visually-hidden">Password</label>
+                    <input type="password" id="password" name="pass" class="form-control" placeholder="Password" required="">
+                    <button class="w-100 btn btn-lg btn-primary" id="login-button" type="submit">Sign in</button>
+                    <p class="mt-5 mb-3 text-muted">© 2020-2021</p>
+                </form>
+            </main>
+        </body>
+    </div>
                 
             <div class="col-md-4"></div>
         </div>
     </div>
-
-    <body class="text-center" data-new-gr-c-s-check-loaded="14.986.0" data-gr-ext-installed="">
-        <h1 class="title-h1">Login</h1>
-    <main class="form-signin">
-        <form action="api/ceklogin.php" method="POST">
-            <h1 class="h3 mb-3 fw-normal">Login Portal</h1>
-            <label for="nrp" class="visually-hidden">Nrp</label>
-            <input type="nrp" name="nrp" id="nrp" class="form-control" placeholder="Ex: c141901xxx" required="">
-            <label for="password" class="visually-hidden">Password</label>
-            <input type="password" id="password" name="pass" class="form-control" placeholder="Password" required="">
-            <button class="w-100 btn btn-lg btn-primary" id="login-button" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">© 2020-2021</p>
-        </form>
-    </main>
+    
 
       <img src="asset/char/Karakter ITEM 1.png" id="karakter1">
       <img src="asset/char/Karakter ITEM 2.png" id="karakter2">
