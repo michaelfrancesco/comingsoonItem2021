@@ -32,19 +32,26 @@
 
     <div class = "container">
         <div class = "row"> 
-            <form action="../add_data.php" method="POST" enctype="multipart/form-data">
-                <input type="hidden" name="size" value="1000000">
-                <div>
-                    <label for="image" class="visually-hidden">Image</label>
-                    <input type="file" name="image" accept="image/*" required="" placeholder="Input Image">
-                    <label class="visually-hidden">Quotes</label>
-                    <input type="text" name="quote" cols="40" rows="4" class="form-control" placeholder="Input Quotes" required=""></input>
-                    <label class="visually-hidden">Movie</label>
-                    <input type="text" name="movie" class="form-control" placeholder=" ex : -Sasa, Power Ranger ">
-                    <br>
-                    <input class="w-100 btn btn-lg btn-primary" id="upload-button" type="submit"></input>
-                </div>
-            </form>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+                <div class="card p-4 text-left">
+                <form action="../add_data.php" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="size" value="1000000">
+                    <div>
+                        <label for="image" class="visually-hidden">Image</label>
+                        <input type="file" name="image" accept="image/*" required="" placeholder="Input Image">
+                        <label class="visually-hidden">Quotes</label>
+                        <input type="text" name="quote" cols="40" rows="4" class="form-control" placeholder="Input Quotes" required=""></input>
+                        <label class="visually-hidden">Movie</label>
+                        <input type="text" name="movie" class="form-control" placeholder=" ex : -Sasa, Power Ranger ">
+                        <br>
+                        <input class="w-100 btn btn-lg btn-primary" id="upload-button" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+            </div>
+            
+            
         </div>
     </div>
     
