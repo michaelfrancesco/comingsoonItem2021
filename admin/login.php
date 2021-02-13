@@ -1,5 +1,4 @@
 <?php
-
 include "api/connect.php";
 if (isset ($_SESSION['nrp'])){
     header ("location: index.php");
@@ -9,6 +8,7 @@ if ($_GET['stat']== 1) {
     echo "<script> alert ('Wrong Password and NRP'); </script> ";
     }
 }
+
 ?>
 
 <!DOCTYPE html>
