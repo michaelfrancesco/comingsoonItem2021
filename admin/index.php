@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+
+    if( !isset($_SESSION["check"])){
+        header("location: login.php");
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +56,7 @@
                         <input type="text" name="movie" class="form-control" placeholder=" ex : -Sasa, Power Ranger ">
                         <br>
                         <input class="w-100 btn btn-lg btn-primary" id="upload-button" type="submit"></input>
+                        <a href = "logout.php"> Log Out </a>
                     </div>
                 </form>
             </div>

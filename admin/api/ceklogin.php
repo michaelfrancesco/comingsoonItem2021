@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include "connect.php";
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
@@ -17,7 +19,8 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         if($stmt-> rowCount()!= 0){
             echo '<script> alert ("Login Success"); </script>';
             // $_SESSION['nrp'] = $row['nrp'];
-            header("location: ../index.html");   
+            header("location: ../index.php");
+            $_SESSION["check"] = true;   
         }else{
             echo '<script> alert ("Wrong NRP or Password"); </script>';
             header("location: ../login.php?stat=1");
