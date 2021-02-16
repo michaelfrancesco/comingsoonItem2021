@@ -1,6 +1,6 @@
 <?php
 
-include "api/connect.php";
+include "connect.php";
 
     $target_dir = "picts/";
     $target_file = $target_dir . basename($_FILES["image"]["name"]);
@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
     $quote = $_POST['quote'];
     $movie = $_POST['movie'];
-    $imgname = $target_dir . basename($_FILES["image"]["name"]);
+    $imgname = "admin/api/" . $target_dir . basename($_FILES["image"]["name"]);
     $image = $_FILES['image']['name'];
 
     //echo $nama . " ". $nrp;
@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             echo "Sorry, your file was not uploaded.";
         } else {
             if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-                header("location: admin/index.html");
+                header("location: ../index.html");
                 echo '<script> alert ("Upload Success"); </script>';
             } else {
                 echo '<script> alert ("Failed to Upload Data"); </script>';
