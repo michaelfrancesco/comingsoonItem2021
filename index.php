@@ -31,7 +31,7 @@
     </div>
 
     <div class="button">
-        <button type="button" id="cek" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Click Me</button>
+        <button type="button" id="cek" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Movies Quotes</button>
 
     </div>
 
